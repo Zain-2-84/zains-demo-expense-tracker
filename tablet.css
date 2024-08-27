@@ -1,6 +1,71 @@
 @media(min-width:501px) and (max-width: 768px){
     .container{
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat();
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(21, minmax(6rem, 1fr));
+        grid-template-areas: 
+            /* 1st row */
+            "navbar navbar navbar navbar"
+
+            /* 2nd row */
+            "navbar navbar navbar navbar"
+
+            /* 3rd row */
+            "navbar navbar navbar navbar"
+
+            /* 4th row */
+            "navbar navbar navbar navbar"
+
+            /* 5th row */
+            "navbar navbar navbar navbar"
+
+            /* 6th row */
+            "navbar navbar navbar navbar"
+
+            /* 7th row */
+            "navbar navbar navbar navbar"
+
+            /* 8th row */
+            "navbar navbar navbar navbar"
+
+            /* 9th row */
+            "navbar navbar navbar navbar"
+
+            /* 10th row */
+            "navbar navbar navbar navbar"
+
+            /* 11th row */
+            "navbar navbar navbar navbar"
+
+            /* 12th row */
+            "navbar navbar navbar navbar"
+
+            /* 13th row */
+            "navbar navbar navbar navbar"
+
+            /* 14th row */
+            "monthly-report-graph monthly-report-graph monthly-report-graph monthly-report-graph"
+
+            /* 15th row */
+            "monthly-report-graph monthly-report-graph monthly-report-graph monthly-report-graph"
+
+            /* 16th row */
+            "monthly-report-graph monthly-report-graph monthly-report-graph monthly-report-graph"
+
+            /* 17th row */
+            "monthly-report-graph monthly-report-graph monthly-report-graph monthly-report-graph"
+
+            /* 18th row */
+            "income income expense expense"
+
+            /* 19th row */
+            "income income expense expense"
+
+            /* 20th row */
+            "footer footer footer footer"
+
+            /* 21st row */
+            "footer footer footer footer"
+
+        ;
     }
 }

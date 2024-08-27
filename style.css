@@ -8,8 +8,8 @@
 .container{
     display: grid;
     /* grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr minmax(10rem); */
-    grid-template-rows: repeat(18, minmax(5rem, 1fr));
     grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(18, minmax(5rem, 1fr));
     gap: 0.5rem;
     grid-template-areas: 
         /* 1st row */
@@ -37,16 +37,16 @@
         "sidebar pending-tasks pending-tasks pending-tasks transaction-history transaction-history"
 
         /* 9th row */
-        ". income income expense expense ."
+        "monthly-report-graph monthly-report-graph monthly-report-graph monthly-report-graph monthly-report-graph monthly-report-graph"
 
         /* 10th row */
-        ". income income expense expense ."
+        "monthly-report-graph monthly-report-graph monthly-report-graph monthly-report-graph monthly-report-graph monthly-report-graph"
 
         /* 11th row */
-        ". income income expense expense ."
+        "monthly-report-graph monthly-report-graph monthly-report-graph monthly-report-graph monthly-report-graph monthly-report-graph"
 
         /* 12th row */
-        ". income income expense expense ."
+        "monthly-report-graph monthly-report-graph monthly-report-graph monthly-report-graph monthly-report-graph monthly-report-graph"
 
         /* 13th row */
         ". income income expense expense ."
@@ -55,10 +55,10 @@
         ". income income expense expense ."
 
         /* 15th row */
-        "monthly-report-graph monthly-report-graph monthly-report-graph monthly-report-graph monthly-report-graph monthly-report-graph"
+        ". income income expense expense ."
 
         /* 16th row */
-        "monthly-report-graph monthly-report-graph monthly-report-graph monthly-report-graph monthly-report-graph monthly-report-graph"
+        ". income income expense expense ."
 
         /* 17th row */
         "footer footer footer footer footer footer"
