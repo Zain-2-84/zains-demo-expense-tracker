@@ -2,7 +2,8 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
 }
 
 .container{
@@ -10,7 +11,8 @@
     /* grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr minmax(10rem); */
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(18, minmax(5rem, 1fr));
-    gap: 0.5rem;
+    gap: 1rem;
+    background-color: #f1f6f9;
     grid-template-areas: 
         /* 1st row */
         "navbar navbar navbar navbar navbar navbar"
@@ -66,22 +68,116 @@
         /* 18th row */
         "footer footer footer footer footer footer"
         ;
+
+        text-align: center;
 }
 
+/* navbar start */
 .navbar{
     grid-area: navbar;
-    background-color: #f94144;
+    background-color: white;
+    display: grid;
+    /* originally 5 columns, now 8 */
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+        /* 1st row */
+        ". . . . . . . ."
+
+        /* 2nd row */
+        "navbar-logo . . . . navbar-help navbar-blog navbar-signIn"
+
+        /* 3rd row */
+        ". . . . . . . ."
+    ;
+
+    /* align-items: center; */
 }
+
+.navbar-logo{
+    grid-area: navbar-logo;
+    /* align-self: center; */
+}
+
+.navbar-help{
+    grid-area: navbar-help;
+    /* align-self: center; */
+}
+
+.navbar-blog{
+    grid-area: navbar-blog;
+    /* align-self: center; */
+}
+
+.navbar-signIn{
+    grid-area: navbar-signIn;
+    /* align-self: center; */
+}
+/* navbar end */
+
+/* sidebar start */
+.sidebar{
+    grid-area: sidebar;
+    background-color: #f8961e;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+        /* 1st row */
+        "dashBoard-icon dashBoard"
+
+        /* 2nd row */
+        "bills-and-payments-Icon bills-and-payments"
+
+        /* 3rd row */
+        "expenses-icon expenses"
+
+        /* 4th row */
+        "settings-icon settings"
+    ;
+
+    align-items: center;
+}
+
+.dashBoard-icon{
+    grid-area: dashBoard-icon;
+}
+
+.dashBoard{
+    grid-area: dashBoard;
+}
+
+.bills-and-payments-Icon{
+    grid-area: bills-and-payments-Icon;
+}
+
+.bills-and-payments{
+    grid-area: bills-and-payments;
+}
+
+.expenses-icon{
+    grid-area: expenses-icon;
+}
+
+.expenses{
+    grid-area: expenses;
+}
+
+.settings-icon{
+    grid-area: settings-icon;
+}
+
+.settings{
+    grid-area: settings;
+}
+/* sidebar end */
 
 .pending-tasks{
     grid-area: pending-tasks;
     background-color: #f3722c;
 }
 
-.sidebar{
-    grid-area: sidebar;
-    background-color: #f8961e;
-}
 
 .income{
     grid-area: income;

@@ -2,7 +2,7 @@
     .container{
         grid-template-columns: 1fr;
         /* minimum rows = 18 + 7 => 25 */
-        grid-template-rows: repeat(23, minmax(7rem, 1fr));
+        grid-template-rows: repeat(23, minmax(5rem, 1fr));
         grid-template-areas: 
             /* 1st row */
             "navbar"

@@ -1,46 +1,46 @@
 @media(min-width:501px) and (max-width: 768px){
     .container{
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(21, minmax(6rem, 1fr));
+        grid-template-rows: repeat(21, minmax(5rem, 1fr));
         grid-template-areas: 
             /* 1st row */
             "navbar navbar navbar navbar"
 
             /* 2nd row */
-            "navbar navbar navbar navbar"
+            "sidebar pending-tasks pending-tasks pending-tasks"
 
             /* 3rd row */
-            "navbar navbar navbar navbar"
+            "sidebar pending-tasks pending-tasks pending-tasks"
 
             /* 4th row */
-            "navbar navbar navbar navbar"
+            "sidebar pending-tasks pending-tasks pending-tasks"
 
             /* 5th row */
-            "navbar navbar navbar navbar"
+            "sidebar pending-tasks pending-tasks pending-tasks"
 
             /* 6th row */
-            "navbar navbar navbar navbar"
+            "sidebar pending-tasks pending-tasks pending-tasks"
 
             /* 7th row */
-            "navbar navbar navbar navbar"
+            "sidebar pending-tasks pending-tasks pending-tasks"
 
             /* 8th row */
-            "navbar navbar navbar navbar"
+            ". transaction-history transaction-history ."
 
             /* 9th row */
-            "navbar navbar navbar navbar"
+            ". transaction-history transaction-history ."
 
             /* 10th row */
-            "navbar navbar navbar navbar"
+            ". transaction-history transaction-history ."
 
             /* 11th row */
-            "navbar navbar navbar navbar"
+            ". transaction-history transaction-history ."
 
             /* 12th row */
-            "navbar navbar navbar navbar"
+            ". transaction-history transaction-history ."
 
             /* 13th row */
-            "navbar navbar navbar navbar"
+            ". transaction-history transaction-history ."
 
             /* 14th row */
             "monthly-report-graph monthly-report-graph monthly-report-graph monthly-report-graph"
