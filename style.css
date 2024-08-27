@@ -1,0 +1,110 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+.container{
+    display: grid;
+    /* grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr minmax(10rem); */
+    grid-template-rows: repeat(18, minmax(5rem, 1fr));
+    grid-template-columns: repeat(6, 1fr);
+    gap: 0.5rem;
+    grid-template-areas: 
+        /* 1st row */
+        "navbar navbar navbar navbar navbar navbar"
+        
+        /* 2nd row */
+        "sidebar pending-tasks pending-tasks pending-tasks transaction-history transaction-history"
+
+        /* 3rd row */
+        "sidebar pending-tasks pending-tasks pending-tasks transaction-history transaction-history"
+
+        /* 4th row */
+        "sidebar pending-tasks pending-tasks pending-tasks transaction-history transaction-history"
+
+        /* 5th row */
+        "sidebar pending-tasks pending-tasks pending-tasks transaction-history transaction-history"
+
+        /* 6th row */
+        "sidebar pending-tasks pending-tasks pending-tasks transaction-history transaction-history"
+
+        /* 7th row */
+        "sidebar pending-tasks pending-tasks pending-tasks transaction-history transaction-history"
+
+        /* 8th row */
+        "sidebar pending-tasks pending-tasks pending-tasks transaction-history transaction-history"
+
+        /* 9th row */
+        ". income income expense expense ."
+
+        /* 10th row */
+        ". income income expense expense ."
+
+        /* 11th row */
+        ". income income expense expense ."
+
+        /* 12th row */
+        ". income income expense expense ."
+
+        /* 13th row */
+        ". income income expense expense ."
+
+        /* 14th row */
+        ". income income expense expense ."
+
+        /* 15th row */
+        "monthly-report-graph monthly-report-graph monthly-report-graph monthly-report-graph monthly-report-graph monthly-report-graph"
+
+        /* 16th row */
+        "monthly-report-graph monthly-report-graph monthly-report-graph monthly-report-graph monthly-report-graph monthly-report-graph"
+
+        /* 17th row */
+        "footer footer footer footer footer footer"
+
+        /* 18th row */
+        "footer footer footer footer footer footer"
+        ;
+}
+
+.navbar{
+    grid-area: navbar;
+    background-color: #f94144;
+}
+
+.pending-tasks{
+    grid-area: pending-tasks;
+    background-color: #f3722c;
+}
+
+.sidebar{
+    grid-area: sidebar;
+    background-color: #f8961e;
+}
+
+.income{
+    grid-area: income;
+    background-color: #f9c74f;
+}
+
+.expense{
+    grid-area: expense;
+    background-color: #90be6d;
+}
+
+.transaction-history{
+    grid-area: transaction-history;
+    background-color: #43aa8b;
+}
+
+.monthly-report-graph{
+    grid-area: monthly-report-graph;
+    background-color: #283618;
+    color: white;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: #577590;
+}

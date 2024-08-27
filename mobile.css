@@ -1,0 +1,77 @@
+@media (max-width: 500px){
+    .container{
+        grid-template-columns: 1fr;
+        /* minimum rows = 18 + 7 => 25 */
+        grid-template-rows: repeat(23, minmax(7rem, 1fr));
+        grid-template-areas: 
+            /* 1st row */
+            "navbar"
+
+            /* 2nd row */
+            "sidebar"
+
+            /* 3rd row */
+            "pending-tasks"
+
+            /* 4th row */
+            "pending-tasks"
+
+            /* 5th row */
+            "pending-tasks"
+
+            /* 6th row */
+            "pending-tasks"
+
+            /* 7th row */
+            "pending-tasks"
+
+            /* 8th row */
+            "pending-tasks"
+
+            /* 9th row */
+            "income"
+
+            /* 10th row */
+            "income"
+
+            /* 11th row */
+            "income"
+
+            /* 12th row */
+            "expense"
+
+            /* 13th row */
+            "expense"
+
+            /* 14th row */
+            "expense"
+
+            /* 15th row */
+            ""
+
+            /* 16th row */
+            ""
+
+            /* 17th row */
+            ""
+
+            /* 18th row */
+            "footer"
+
+            /* 19th row */
+            "footer"
+
+            /* 20th row */
+            "footer"
+
+            /* 21st row */
+            "footer"
+
+            /* 22nd row */
+            "footer"
+
+            /* 23rd row */
+            "footer"
+        ;
+    }
+}
