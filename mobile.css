@@ -1,8 +1,8 @@
 @media (max-width: 500px){
     .container{
         grid-template-columns: 1fr;
-        /* minimum rows = 18 + 7 => 25 */
-        grid-template-rows: repeat(23, minmax(5rem, 1fr));
+        /* originally 23 rows, now 18 */
+        grid-template-rows: repeat(16, minmax(5rem, 1fr));
         grid-template-areas: 
             /* 1st row */
             "navbar"
@@ -35,43 +35,27 @@
             "transaction-history"
 
             /* 11th row */
-            "transaction-history"
+            "monthly-report-graph"
 
             /* 12th row */
-            "transaction-history"
+            "monthly-report-graph"
 
             /* 13th row */
-            "transaction-history"
+            "income"
 
             /* 14th row */
-            "monthly-report-graph"
+            "expense"
 
             /* 15th row */
-            "monthly-report-graph"
+            "footer"
 
             /* 16th row */
-            "monthly-report-graph"
-
-            /* 17th row */
-            "monthly-report-graph"
-
-            /* 18th row */
-            "income"
-
-            /* 19th row */
-            "income"
-
-            /* 20th row */
-            "expense"
-
-            /* 21st row */
-            "expense"
-
-            /* 22nd row */
             "footer"
 
-            /* 23rd row */
-            "footer"
         ;
+    }
+
+    .monthly-report-graph-img{
+        width: 80%;
     }
 }

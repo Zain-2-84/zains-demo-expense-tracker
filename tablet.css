@@ -2,7 +2,8 @@
     .container{
         /* originally 4 columns, now 6 */
         grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(21, minmax(5rem, 1fr));
+        /* originally 21 rows, now 15 */
+        grid-template-rows: repeat(15, minmax(5rem, 1fr));
         grid-template-areas: 
             /* 1st row */
             "navbar navbar navbar navbar navbar navbar"
@@ -35,38 +36,19 @@
             ". transaction-history transaction-history transaction-history transaction-history ."
 
             /* 11th row */
-            ". transaction-history transaction-history transaction-history transaction-history ."
+            "monthly-report-graph monthly-report-graph monthly-report-graph monthly-report-graph monthly-report-graph monthly-report-graph"
 
             /* 12th row */
-            ". transaction-history transaction-history transaction-history transaction-history ."
-
+            "monthly-report-graph monthly-report-graph monthly-report-graph monthly-report-graph monthly-report-graph monthly-report-graph"
+            
             /* 13th row */
-            ". transaction-history transaction-history transaction-history transaction-history ."
+            "income income income expense expense expense"
 
             /* 14th row */
-            "monthly-report-graph monthly-report-graph monthly-report-graph monthly-report-graph monthly-report-graph monthly-report-graph"
+            "footer footer footer footer footer footer"
 
             /* 15th row */
-            "monthly-report-graph monthly-report-graph monthly-report-graph monthly-report-graph monthly-report-graph monthly-report-graph"
-
-            /* 16th row */
-            "monthly-report-graph monthly-report-graph monthly-report-graph monthly-report-graph monthly-report-graph monthly-report-graph"
-
-            /* 17th row */
-            "monthly-report-graph monthly-report-graph monthly-report-graph monthly-report-graph monthly-report-graph monthly-report-graph"
-
-            /* 18th row */
-            "income income income expense expense expense"
-
-            /* 19th row */
-            "income income income expense expense expense"
-
-            /* 20th row */
             "footer footer footer footer footer footer"
-
-            /* 21st row */
-            "footer footer footer footer footer footer"
-
         ;
     }
 }

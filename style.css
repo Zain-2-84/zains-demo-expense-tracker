@@ -14,7 +14,9 @@
     display: grid;
     /* grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr minmax(10rem); */
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(18, minmax(5rem, 1fr));
+    /* originally 18 rows, now 15 */
+    /* originally 5rem, now 2rem */
+    grid-template-rows: repeat(15, minmax(2rem, 1fr));
     gap: 1rem;
     background-color: #f1f6f9;
     grid-template-areas: 
@@ -58,18 +60,9 @@
         ". income income expense expense ."
 
         /* 14th row */
-        ". income income expense expense ."
-
-        /* 15th row */
-        ". income income expense expense ."
-
-        /* 16th row */
-        ". income income expense expense ."
-
-        /* 17th row */
         "footer footer footer footer footer footer"
 
-        /* 18th row */
+        /* 15th row */
         "footer footer footer footer footer footer"
         ;
 
@@ -190,52 +183,65 @@
         "pending-tasks-heading . ."
 
         /* 2nd row */
-        "pending-tasks-item-1 . ."
+        "pending-tasks-item-1 . pending-tasks-item-1-number"
 
         /* 3rd row */
-        "pending-tasks-item-2 . ."
+        "pending-tasks-item-2 . pending-tasks-item-2-number"
 
         /* 4th row */
-        "pending-tasks-item-3 . ."
+        "pending-tasks-item-3 . pending-tasks-item-3-number"
 
         /* 5th row */
-        "pending-tasks-item-4 . ."
+        "pending-tasks-item-4 . pending-tasks-item-4-number"
 
         /* 6th row */
-        "pending-tasks-item-5 . ."
+        "pending-tasks-item-5 . pending-tasks-item-5-number"
     ;
 }
 
 .pending-tasks-heading{
     grid-area: pending-tasks-heading;
-    background-color: burlywood;
 }
 
 .pending-tasks-item-1{
     grid-area: pending-tasks-item-1;
-    background-color: burlywood;
+}
+
+.pending-tasks-item-1-number{
+    grid-area: pending-tasks-item-1-number;
 }
 
 .pending-tasks-item-2{
     grid-area: pending-tasks-item-2;
-    background-color: burlywood;
+}
+
+.pending-tasks-item-2-number{
+    grid-area: pending-tasks-item-2-number;
 }
 
 .pending-tasks-item-3{
     grid-area: pending-tasks-item-3;
-    background-color: burlywood;
+}
+
+.pending-tasks-item-3-number{
+    grid-area: pending-tasks-item-3-number;
 }
 
 .pending-tasks-item-4{
     grid-area: pending-tasks-item-4;
-    background-color: burlywood;
+}
+
+.pending-tasks-item-4-number{
+    grid-area: pending-tasks-item-4-number;
 }
 
 .pending-tasks-item-5{
     grid-area: pending-tasks-item-5;
-    background-color: burlywood;
 }
 
+.pending-tasks-item-5-number{
+    grid-area: pending-tasks-item-5-number;
+}
 
 /* pending-tasks end */
 
@@ -254,10 +260,20 @@
     background-color: #ffffff;
 }
 
+/* monthly-report-graph start */
 .monthly-report-graph{
     grid-area: monthly-report-graph;
     background-color: #ffffff;
+    display: grid;
+    grid-template-rows: 0.1fr 1fr;
 }
+
+.monthly-report-graph-img{
+    width: 50%;
+    justify-self: center;
+}
+
+/* monthly-report-graph end */
 
 .footer{
     grid-area: footer;
