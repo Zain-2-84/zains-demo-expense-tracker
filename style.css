@@ -208,26 +208,32 @@
 
 .pending-tasks-heading{
     grid-area: pending-tasks-heading;
+    background-color: burlywood;
 }
 
 .pending-tasks-item-1{
     grid-area: pending-tasks-item-1;
+    background-color: burlywood;
 }
 
 .pending-tasks-item-2{
     grid-area: pending-tasks-item-2;
+    background-color: burlywood;
 }
 
 .pending-tasks-item-3{
     grid-area: pending-tasks-item-3;
+    background-color: burlywood;
 }
 
 .pending-tasks-item-4{
     grid-area: pending-tasks-item-4;
+    background-color: burlywood;
 }
 
 .pending-tasks-item-5{
     grid-area: pending-tasks-item-5;
+    background-color: burlywood;
 }
 
 
