@@ -70,6 +70,9 @@
 
 /* navbar start */
 .navbar{
+    /* only for login start */
+    padding-left: 1rem;
+    /* only for login end */
     grid-area: navbar;
     background-color: white;
     display: grid;
@@ -383,9 +386,11 @@
 
 /* login-container start */
 .login-container{
+    background-color: #f1f6f9;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(8, minmax(5rem, 1fr));
+    gap: 1rem;
     grid-template-areas: 
         /* 1st row */
         "navbar navbar navbar navbar navbar navbar"
@@ -417,7 +422,51 @@
 }
 
 .login-content{
+    min-height: 50vh;
+    background-color: #ffffff;
+    border-radius: 3rem;
     grid-area: login-content;
-    background-color: burlywood;
+    gap: 1rem;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+        /* 1st row */
+        "login-heading login-heading"
+
+        /* 2nd row */
+        "login-userName-paragraph login-userName-input"
+
+        /* 3rd row */
+        "login-password-paragraph login-password-input"
+
+        /* 4th row */
+        "login-submit login-submit"
+    ;
+}
+
+.login-heading{
+    grid-area: login-heading;
+}
+
+.login-userName-paragraph{
+    grid-area: login-userName-paragraph;
+}
+
+.login-userName-input{
+    grid-area: login-userName-input;
+}
+
+.login-password-paragraph{
+    grid-area: login-password-paragraph;
+}
+
+.login-password-input{
+    grid-area: login-password-input;
+}
+
+.login-submit{
+    grid-area: login-submit;
 }
 /* login-container end */

@@ -91,4 +91,28 @@
             "transaction-history-company-3  transaction-history-amount-3"
         ;
         }
+
+    .login-content{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas: 
+            /* 1st row */
+            "login-heading"
+
+            /* 2nd row */
+            "login-userName-paragraph"
+
+            /* 3rd row */
+            "login-userName-input"
+
+            /* 4th row */
+            "login-password-paragraph"
+
+            /* 5th row */
+            "login-password-input"
+        
+            /* 6th row */
+            "login-submit"
+        ;
+    }
 }
