@@ -15,8 +15,7 @@
     /* grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr minmax(10rem); */
     grid-template-columns: repeat(6, 1fr);
     /* originally 18 rows, now 15 */
-    /* originally 5rem, now 2rem */
-    grid-template-rows: repeat(15, minmax(2rem, 1fr));
+    grid-template-rows: repeat(15, minmax(5rem, 1fr));
     gap: 1rem;
     background-color: #f1f6f9;
     grid-template-areas: 
@@ -177,25 +176,25 @@
     align-items: center;
     display: grid;
     grid-template-rows: repeat(6, 1fr);
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-areas: 
         /* 1st row */
-        "pending-tasks-heading . ."
+        "pending-tasks-heading ."
 
         /* 2nd row */
-        "pending-tasks-item-1 . pending-tasks-item-1-number"
+        "pending-tasks-item-1 pending-tasks-item-1-number"
 
         /* 3rd row */
-        "pending-tasks-item-2 . pending-tasks-item-2-number"
+        "pending-tasks-item-2 pending-tasks-item-2-number"
 
         /* 4th row */
-        "pending-tasks-item-3 . pending-tasks-item-3-number"
+        "pending-tasks-item-3 pending-tasks-item-3-number"
 
         /* 5th row */
-        "pending-tasks-item-4 . pending-tasks-item-4-number"
+        "pending-tasks-item-4 pending-tasks-item-4-number"
 
         /* 6th row */
-        "pending-tasks-item-5 . pending-tasks-item-5-number"
+        "pending-tasks-item-5 pending-tasks-item-5-number"
     ;
 }
 
@@ -264,13 +263,21 @@
 .monthly-report-graph{
     grid-area: monthly-report-graph;
     background-color: #ffffff;
-    display: grid;
-    grid-template-rows: 0.1fr 1fr;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
 
-.monthly-report-graph-img{
-    width: 50%;
-    justify-self: center;
+.monthly-report-graph-img {
+    max-width: 65%;
+    max-height: 65%;
+    width: auto;
+    height: auto;
+    object-fit: contain; /* Makes sure the image fits within the container without distortion */
+    display: block;
+    margin: 0 auto; /* Centers the image horizontally */
 }
 
 /* monthly-report-graph end */

@@ -9,22 +9,22 @@
             "navbar navbar navbar navbar navbar navbar"
 
             /* 2nd row */
-            "sidebar pending-tasks pending-tasks pending-tasks pending-tasks pending-tasks"
+            "sidebar sidebar pending-tasks pending-tasks pending-tasks pending-tasks"
 
             /* 3rd row */
-            "sidebar pending-tasks pending-tasks pending-tasks pending-tasks pending-tasks"
+            "sidebar sidebar pending-tasks pending-tasks pending-tasks pending-tasks"
 
             /* 4th row */
-            "sidebar pending-tasks pending-tasks pending-tasks pending-tasks pending-tasks"
+            "sidebar sidebar pending-tasks pending-tasks pending-tasks pending-tasks"
 
             /* 5th row */
-            "sidebar pending-tasks pending-tasks pending-tasks pending-tasks pending-tasks"
+            "sidebar sidebar pending-tasks pending-tasks pending-tasks pending-tasks"
 
             /* 6th row */
-            "sidebar pending-tasks pending-tasks pending-tasks pending-tasks pending-tasks"
+            "sidebar sidebar pending-tasks pending-tasks pending-tasks pending-tasks"
 
             /* 7th row */
-            "sidebar pending-tasks pending-tasks pending-tasks pending-tasks pending-tasks"
+            "sidebar sidebar pending-tasks pending-tasks pending-tasks pending-tasks"
 
             /* 8th row */
             ". transaction-history transaction-history transaction-history transaction-history ."
@@ -50,5 +50,24 @@
             /* 15th row */
             "footer footer footer footer footer footer"
         ;
+    }
+
+    .navbar{
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-areas: 
+        /* 1st row */
+        ". . . . . ."
+
+        /* 2nd row */
+        "navbar-logo navbar-logo . navbar-help navbar-blog navbar-signIn"
+
+        /* 3rd row */
+        ". . . . . ."
+    ;
+    }
+
+    .monthly-report-graph-img{
+        max-width: 75%;
+        max-height: 75%;
     }
 }

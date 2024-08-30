@@ -1,4 +1,4 @@
-@media (max-width: 500px){
+@media (min-width:300px) and (max-width: 500px){
     .container{
         grid-template-columns: 1fr;
         /* originally 23 rows, now 18 */
@@ -53,9 +53,24 @@
             "footer"
 
         ;
+    }    
+    
+    .navbar{
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-areas: 
+        /* 1st row */
+        ". . . . ."
+
+        /* 2nd row */
+        "navbar-logo navbar-logo navbar-help navbar-blog navbar-signIn"
+
+        /* 3rd row */
+        ". . . . ."
+    ;
     }
 
     .monthly-report-graph-img{
-        width: 80%;
+        max-width: 85%;
+        max-height: 85%;
     }
 }
