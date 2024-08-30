@@ -2,8 +2,8 @@
     .container{
         /* originally 4 columns, now 6 */
         grid-template-columns: repeat(6, 1fr);
-        /* originally 21 rows, now 15 */
-        grid-template-rows: repeat(15, minmax(5rem, 1fr));
+        /* originally 21 rows, now 14 */
+        grid-template-rows: repeat(14, minmax(5rem, 1fr));
         grid-template-areas: 
             /* 1st row */
             "navbar navbar navbar navbar navbar navbar"
@@ -33,21 +33,18 @@
             ". transaction-history transaction-history transaction-history transaction-history ."
 
             /* 10th row */
-            ". transaction-history transaction-history transaction-history transaction-history ."
-
+            "monthly-report-graph monthly-report-graph monthly-report-graph monthly-report-graph monthly-report-graph monthly-report-graph"
+            
             /* 11th row */
             "monthly-report-graph monthly-report-graph monthly-report-graph monthly-report-graph monthly-report-graph monthly-report-graph"
 
             /* 12th row */
-            "monthly-report-graph monthly-report-graph monthly-report-graph monthly-report-graph monthly-report-graph monthly-report-graph"
+            "income income income expense expense expense"
             
             /* 13th row */
-            "income income income expense expense expense"
-
-            /* 14th row */
             "footer footer footer footer footer footer"
 
-            /* 15th row */
+            /* 14th row */
             "footer footer footer footer footer footer"
         ;
     }
@@ -70,4 +67,22 @@
         max-width: 75%;
         max-height: 75%;
     }
+
+    .transaction-history{
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+            /* 1st row */
+            "transaction-history-heading transaction-history-heading"
+
+            /* 2nd row */
+            "transaction-history-company-1  transaction-history-amount-1"
+
+            /* 3rd row */
+            "transaction-history-company-2  transaction-history-amount-2"
+
+            /* 4th row */
+            "transaction-history-company-3  transaction-history-amount-3"
+        ;
+        }
 }
